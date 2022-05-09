@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <style>
+      html {
+        height: 100%;
+        margin: 0;
+      }
+      body {
+        height: 100%;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        background-image: url(./images/bo.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0;
+        overflow: hidden;
+        background-color: none;
+        font-size: large;
+        font-weight: bold;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      li a:hover {
+        background-color: rgba(255, 255, 255, 0.467);
+        color: black;
+        width: 100px;
+        border-radius: 20px;
+        margin: 5px;
+      }
+      .main{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left:50%;
+        top: 50%;
+        z-index: -1;
+      }
+      .heading1{
+        color: whitesmoke;
+        margin: 50px 0px 0px 0px;
+        text-shadow: 0 0 10px blue, 0 0 100px white;
+      }
+      .heading1:hover{
+        font-size:xx-large;
+      }
+      .main hr{
+        width: 600px;
+        margin: 20px 0px;
+      }
+      .main p{
+        color: whitesmoke;
+        text-shadow: 0 0 10px blue, 0 0 30px white;
+        line-height: 20px;
+        word-spacing: 5px;
+        font-size: large;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      .footer{
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        right: 0;
+        top: 0;
+        width: 300px;
+        margin: 10px;
+        background-color: rgba(66, 48, 236, 0.248);
+        border: 4px solid white;
+        border-radius: 10px;
+      }
+      .footer:hover{
+        background-color: rgba(0, 0, 0, 0.418);
+      }
+      .one,.two{
+        display: inline;
+        float: left;
+        margin: 10px;
+        text-align: center;
+      }
+      .one a,.two a{
+        color: whitesmoke;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: large;
+        letter-spacing: 1px;
+      }
+      .giffy{
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+      }
+      .giffy img{
+        width: 300px;
+      }
+    </style>
+    <script src="https://kit.fontawesome.com/8b72e8e986.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="./contact.html">Help</a></li>
+        <li><a href="./about.html">About</a></li>
+      </ul>
+    </div>
+    <div class="main">
+      <h1 class="heading1">Yarramsetti Jaya Kiran Kumar</h1><hr>
+      <p>Seeking to leverage broad development experience and hands-on technical expertise in a challenging role as a Full-stack Developer.</p>
+    </div>
+    <div class="footer">
+      <div class="one"><a href="">SignIn</a></div>
+      <div class="two"><a href="">Register</a></div>
+    </div>
+    <div class="giffy">
+      <img src="./images/img.jpg">
+    </div>
+  </body>
+</html>

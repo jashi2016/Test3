@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <style>
+      html {
+        height: 100%;
+        margin: 0;
+      }
+      body {
+        height: 100%;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        background-image: url(./images/contactbg.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0);
+        font-size: large;
+        font-weight: bold;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      li a:hover {
+        background-color: rgba(242, 236, 236, 0.948);
+        color: black;
+        width: 100px;
+      }
+      .container{
+          padding: 50px 0px 20px 0px;
+          width: 450px;
+          height: 550px;
+          margin: 100px auto;
+          font-family:Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .heading2{
+          text-align: center;
+      }
+      .container hr{
+        width: 300px;
+      }
+      .glass{
+          background: linear-gradient(deg,rgba(255,255,255,0.1),rgba(255,255,255,0.1));
+          backdrop-filter: blur(10px);
+          border-radius: 20px;
+          border: 1px solid rgba(255,255,255,0.18);
+          box-shadow: 0px 8px 32px 20px rgba(0,0,0);
+          text-align: left;
+          padding: 0;
+      }
+      .formdata{
+          margin: 30px;
+      }
+      .formdata label{
+          padding: 20px;
+      }
+      .formdata input[type=text],input[type=email]{
+          margin: 10px 20px;
+          width: 80%;
+          height: 30px;
+          border: 3px solid black;
+          background-color: rgba(245, 245, 245, 0.404);
+          border-radius: 10px;
+      }
+      .formdata input[type=submit]{
+          margin: 10px 20px;
+          width: 80%;
+          height: 40px;
+          background-color: rgba(245, 245, 245, 0.404);
+          border: 3px solid black;
+          border-radius: 10px;
+          font-weight: bold;
+      }
+      .formdata input[type=submit]:hover{
+        background-color: rgba(0, 0, 0, 0.386);
+        color: white;
+      }
+      .formdata textarea{
+          margin: 10px 20px;
+          width: 80%;
+          border: 3px solid black;
+          border-radius: 10px;
+          background-color: rgba(245, 245, 245, 0.404);
+      }
+      ::placeholder {
+          padding: 20px;
+          font-size: medium;
+          font-weight: bold;
+          color: rgb(97, 97, 75);
+      }
+    </style>
+    <script src="https://kit.fontawesome.com/8b72e8e986.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./contact.html">Help</a></li>
+        <li><a href="./about.html">About</a></li>
+      </ul>
+    </div>
+    <div class="container glass">
+        <h2 class="heading2">Contact US</h2><hr>
+        <form class="formdata" action="">
+            <label for="name">Your Name</label><br>
+            <input type="text" placeholder="Enter your name"><br>
+            <label for="mail">Your Email Id</label><br>
+            <input type="email" placeholder="Enter Your Email">
+            <label for="texting">What You Want From US</label><br>
+            <textarea name="texting" id="desc" cols="30" rows="10" placeholder="Concern please...."></textarea>
+            <input type="submit">
+        </form>
+    </div>
+  </body>
+</html>
